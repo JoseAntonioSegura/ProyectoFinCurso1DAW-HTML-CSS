@@ -323,7 +323,7 @@ body {
 } 
 
 #DatosPersonales {
-    background-image: url(fondo.png);
+    background-image: url(Imagenes/fondo.png);
     background-size: cover;
     font-family: 'Courier New', Courier, monospace;
     margin-top: 150px;
@@ -527,6 +527,7 @@ body {
     letter-spacing: 5px;
     font-family: 'Courier New', Courier, monospace;
 }
+
 #sobreMi p {
     margin: auto;
     padding-left: 42px;
@@ -813,9 +814,9 @@ body {
     transition: all 5s;
 }
 #formacionComplementaria h1{
-    padding: 40px;
+    padding: 30px;
     padding-left: 60px;
-    font-size: 32px;
+    font-size: 42px;
     letter-spacing: 5px;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -846,7 +847,7 @@ body {
     opacity: 0;
     width: 200px;
     top: 70px;
-    left: 750px;
+    left: 880px;
     border-radius: 180px;
     position: absolute;
 }
@@ -878,6 +879,7 @@ body {
     width: 600px;
     height: 80px;
     float: left;
+    font-family: 'Courier New', Courier, monospace;
     position: relative;
     border-radius: 20px;
     border: 2px black solid;
@@ -923,6 +925,7 @@ body {
     background-size: cover;
     font-size: 18px;
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
     margin-left: 100px;
     margin-top: -83px;
     width: 600px;
@@ -1201,7 +1204,7 @@ body {
     text-align: center;
 }
 
-#habilidad {
+.habilidad {
     width: 40.33%;
     padding: 1em;
     box-sizing: border-box;
@@ -1212,7 +1215,7 @@ body {
     font-size: 1.3rem;
     margin-bottom: 1em;
     left: 100px;
-    top: 197px;
+    top: 157px;
     position: absolute;
     border: 2px solid black;
     border-radius: 20px;
@@ -1222,11 +1225,12 @@ body {
     font-size: 16px;
     width: 150px;
 }
+
 #habilidadNombre2 {
     font-size: 1.3rem;
     margin-bottom: 1em;
     left: 100px;
-    top: 330px;
+    top: 240px;
     position: absolute;
     border: 2px solid black;
     border-radius: 20px;
@@ -1236,11 +1240,12 @@ body {
     font-size: 16px;
     width: 150px;
 }
+
 #habilidadNombre3 {
     font-size: 1.3rem;
     margin-bottom: 1em;
     left: 100px;
-    top: 464px;
+    top: 324px;
     position: absolute;
     border: 2px solid black;
     border-radius: 20px;
@@ -1254,7 +1259,7 @@ body {
     font-size: 1.3rem;
     margin-bottom: 1em;
     left: 100px;
-    top: 598px;
+    top: 406px;
     position: absolute;
     border: 2px solid black;
     border-radius: 20px;
@@ -1265,18 +1270,50 @@ body {
     width: 150px;
 }
   
-#habilidadBarra {
+#habilidadNombre5 {
+    font-size: 1.3rem;
+    margin-bottom: 1em;
+    left: 100px;
+    top: 488px;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #0a3ecc;
+    color: white;
+    height: 1.1rem;
+    font-size: 16px;
+    width: 150px;
+}
+  
+#habilidadNombre6 {
+    font-size: 1.3rem;
+    margin-bottom: 1em;
+    left: 100px;
+    top: 572px;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #0a3ecc;
+    color: white;
+    height: 1.1rem;
+    font-size: 16px;
+    width: 150px;
+}
+  
+  
+.habilidadBarra {
     margin-left: 250px;
-    margin-bottom: 80px;
+    margin-bottom: 29px;
     height: 1.1rem;
     background-color: #ccc;
     position: relative;
     overflow: hidden;
     border-radius: 20px;
     border: 2px solid black;
+    top: -38px;
 }
 
-#habilidadProgreso {
+.habilidadProgreso {
     height: 100%;
     position: absolute;
     top: 0;
@@ -1290,7 +1327,7 @@ body {
     color: #000000;
 }
   
-#habilidades:hover #habilidadProgreso {
+#habilidades:hover .habilidadProgreso {
     transform: translatex(0%);
     transition-duration: 3s;
 }
@@ -1387,7 +1424,7 @@ body {
 
 /*INICIO FOOTER*/
 #footer{
-    background-image: url(black_abstract_geometric_background.png);
+    background-image: url(Imagenes/black_abstract_geometric_background.png);
     background-size: cover;
     margin-left: 150px;
     width: 1600px;
@@ -1406,7 +1443,7 @@ body {
 }
 #footer div {
     background-image: url(https://cdn.create.vista.com/api/media/medium/183355834/stock-photo-blank-abstract-grey-textured-background?token=) ;
-    margin-left: 100px;
+    margin-left: 110px;
     width: 300px;
     height: 200px;
     border: 3px solid black;
@@ -1431,7 +1468,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
-
+#footer #footerCorreo {
+    margin-left: 140px;
+}
 #footer #footerCorreo h2 {
     margin-top: 40px;
     text-align: center;
@@ -1440,6 +1479,7 @@ body {
 }
 #footer #redesSociales {
     width: 500px;
+    margin-left: 140px;
 }
 
 #footer img:hover {
@@ -1481,7 +1521,7 @@ body {
     scale: 1.3;
 }
 /* FIN FOOTER*/ /* INICIO MEDIA QUERY*/
-@media  screen and (max-width: 480px) {
+@media  screen and (max-width: 880px) {
 
 #bordeSuperior {
     margin-top: 35px;
@@ -1656,7 +1696,7 @@ body {
 }
 
 #tituloDatosDeContacto h1 {
-    font-size: 12px;
+    font-size: 18px;
     letter-spacing: 2px;
 }
 
@@ -1706,49 +1746,49 @@ body {
 #datos1{
     margin-left: 10px;
     margin-top: 22px;
-    font-size: 8px;
+    font-size: 11px;
 }
 #datos2{
     margin-left: 10px;
     margin-top: 22px;
-    font-size: 8px;
+    font-size: 11px;
 }
 #datos3{
     left: 50px;
     top: 68px;
-    font-size: 8px;
+    font-size: 11px;
 }
 #datos4{
     left: 165px;
-    top: 70px;
-    font-size: 8px;
+    top: 66px;
+    font-size: 10px;
 }
 #datos5{
     left: 50px;
     top: 120px;
-    font-size: 8px;
+    font-size: 11px;
 }
 #datos6{
     left: 165px;
-    top: 120px;
-    font-size: 8px;
+    top: 118px;
+    font-size: 11px;
 }
 
 #datosDeContactoNombre1{
     left: 50px;
-    top: 25px;
+    top: 26px;
     width: 70px;
-    font-size: 8px;
+    font-size: 10px;
 }
 #datosDeContactoNombre2{
-    left: 165px;
-    top: 25px;
-    font-size: 8px;
+    left: 169px;
+    top: 26px;
+    font-size: 9px;
 }
 #datosDeContactoNombre3{
     left: 50px;
     top: 78px;
-    font-size: 8px;
+    font-size: 10px;
 }
 #datosDeContactoNombre4{
     height: 200px;
@@ -1762,24 +1802,24 @@ body {
     width: 50px;
     left: 165px;
     top: 88px;
-    font-size: 8px;
+    font-size: 0px;
 }
 #datosDeContactoNombre5{
     left: 50px;
-    top: 128px;
-    font-size: 8px;
+    top: 130px;
+    font-size: 10px;
 }
 #datosDeContactoNombre6{
     left: 165px;
     top: 128px;
-    font-size: 8px;
+    font-size: 10px;
 }
 
 #sobreMi {
     margin-top: 20px;
     margin-left: 20px;
     width: 385px;
-    height: 320px;
+    height: 390px;
 }
 
 #sobreMi div {
@@ -1788,22 +1828,22 @@ body {
 
 #sobreMi h1 {
     padding: 20px;
-    font-size: 12px;
+    font-size: 18px;
 }
 
 #sobreMi p {
-    padding-left: 10px;
-    padding-right: 60px;
+    padding-left: 20px;
+    padding-right: 50px;
     line-height: 10px;
-    font-size: 8px;
+    font-size: 11px;
     letter-spacing: 1px;
 }
 
 #sobreMi img {
-    top: 20px;
+    top: 50px;
     margin-left: -30px;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     width: 140px;
     height: 80px;
 }
@@ -1811,7 +1851,7 @@ body {
 #sobreMi iframe {
     width: 140px;
     height: 90px;
-    top: 190px;
+    top: 240px;
     left: 210px;
 }
 
@@ -1840,7 +1880,7 @@ body {
 }
 
 #contenedorCarta h1 {
-    font-size: 8px;
+    font-size: 11px;
 }
 
 #contenedorCarta li {
@@ -1962,10 +2002,10 @@ body {
 }
 
 #formacionComplementaria h1{
-    margin-top: -30px;
+    margin-top: -20px;
     padding-left: 20px;
     width: 600px;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 
@@ -2005,7 +2045,7 @@ body {
 
 #tituloPerfilProfesional h1 {
     margin-top: 5px;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 #tituloPerfilProfesional:hover {
@@ -2050,7 +2090,7 @@ body {
 
 #tituloObjetivoProfesional h1{
     margin-top: 5px;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 #objetivoProfesional {
@@ -2068,7 +2108,7 @@ body {
     font-size: 12px;
     text-align: center;
     width: 195px;
-    height: 130px;
+    height: 180px;
 }
 
 #objetivoProfesional p {
@@ -2092,12 +2132,12 @@ body {
 }
 
 #experienciaLaboral li {
-    margin-bottom: -120px;
+    margin-bottom: -150px;
     margin-left: 10px;
 }
 
 #experienciaLaboral p {
-    font-size: 8px;
+    font-size: 11px;
     margin: 10px;
     margin-right: 20px;
 }
@@ -2183,12 +2223,13 @@ body {
 #habilidades {
     width: 400px;
     height: 600px;
-    top: 1900px;
+    top: 1920px;
     left: 0px;
     margin: 40px;
 }
 
 #habilidades h1 {
+    position: relative;
     margin-left: 5px;
     margin-bottom: -40px;
     padding: 15px;
@@ -2196,23 +2237,16 @@ body {
     letter-spacing: 5px;
 }
 
-
-#habilidad1 {
-    margin-top: 10px;
-    width: 10.33%;
-    padding: 1em;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-#habilidad {
-    width: 40.33%;
-    padding: 1em;
-    box-sizing: border-box;
-    text-align: center;
-}
-
 #habilidadNombre1 {
+    margin-bottom: 1em;
+    left: 30px;
+    top: 60px;
+    height: 12px;
+    font-size: 11px;
+    width: 70px;
+}
+
+#habilidadNombre2 {
     margin-bottom: 1em;
     left: 30px;
     top: 90px;
@@ -2221,19 +2255,10 @@ body {
     width: 70px;
 }
 
-#habilidadNombre2 {
-    margin-bottom: 1em;
-    left: 30px;
-    top: 120px;
-    height: 12px;
-    font-size: 12px;
-    width: 70px;
-}
-
 #habilidadNombre3 {
     margin-bottom: 1em;
     left: 30px;
-    top: 150px;
+    top: 122px;
     height: 12px;
     font-size: 12px;
     width: 70px;
@@ -2242,22 +2267,41 @@ body {
 #habilidadNombre4 {
     margin-bottom: 1em;
     left: 30px;
-    top: 184px;
+    top: 155px;
+    height: 12px;
+    font-size: 12px;
+    width: 70px;
+}
+
+#habilidadNombre5 {
+    margin-bottom: 1em;
+    left: 30px;
+    top: 186px;
     height: 12px;
     font-size: 12px;
     width: 70px;
 }
   
-#habilidadBarra {
-    margin-top: -38px;
+#habilidadNombre6 {
+    margin-bottom: 1em;
+    left: 30px;
+    top: 218px;
+    height: 12px;
+    font-size: 12px;
+    width: 70px;
+}
+
+  
+.habilidadBarra {
+    margin-top: -30px;
     margin-left: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     width: 180px;
     height: 12px;
 
 }
   
-#habilidadProgreso {
+.habilidadProgreso {
     font-size: 12px;
     color: black;
     border-radius: 20px;
@@ -2335,7 +2379,7 @@ body {
 }
 
 #footer div {
-    margin-left: 20px;
+    margin-left: 25px;
     width: 100px;
     height: 80px;
 }
@@ -2351,6 +2395,11 @@ body {
     font-size: 8px;
 }
 
+#footer #footerCorreo {
+    font-size: 7px;
+    margin-left: 15px;
+}
+
 #footer #footerCorreo h2 {
     margin-top: 10px;
     font-size: 7px;
@@ -2358,6 +2407,7 @@ body {
 
 #footer #redesSociales {
     width: 140px;
+    margin-left: 15px;
 }
 
 #redesSociales a img {
