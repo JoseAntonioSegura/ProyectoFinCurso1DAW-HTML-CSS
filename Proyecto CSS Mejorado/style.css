@@ -117,6 +117,9 @@ body {
     position: relative;
     border: solid 2px black;
     display: flex;
+    justify-content: space-between; /* Alinear los elementos al extremo */
+    align-items: center; /* Centrar verticalmente */
+    padding: 20px; /* Agregar un espacio interior */
 }
 
 #fondoIzquierdo img {
@@ -255,12 +258,7 @@ body {
     border-color: rgb(255, 255, 255);
     }
 
-main {
-    width: 90%;
-    height: 100px;
-    background-color: aliceblue;
-    margin: auto;
-}
+
 
 /* Media queries */
 @media screen and (max-width: 768px) {
@@ -272,4 +270,379 @@ main {
     #fondoDerecho {
         width: 100%;
     }
+}
+
+main {
+    width: 88%;
+    height: auto;
+    margin: auto;
+    background-color: rgba(240, 248, 255, 0.623);
+    display: block;
+    padding: 20px;
+}
+
+#sobreMi {
+    display: flex;
+    background-image: url("https://png.pngtree.com/background/20220720/original/pngtree-light-gray-background-texture-picture-image_1684251.jpg");
+    background-size: cover;
+    margin: auto;
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+    border: 2px black solid;
+    justify-content: center;
+    vertical-align: middle;
+    padding-top: 40px;
+    padding-bottom: 10%;
+}
+
+#sobreMi div {
+   width: 50%;
+   float: left;
+}
+
+#sobreMi h1 {
+    margin: auto;
+    padding: 40px;
+    font-size: 32px;
+    letter-spacing: 5px;
+}
+
+#sobreMi p {
+    margin: auto;
+    padding-left: 42px;
+    padding-right: 100px;
+    line-height: 30px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+#sobreMi img {
+    top: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 45%;
+    height: auto;
+    border: 2px solid;
+}
+#sobreMi iframe {
+    width: 90%;
+    height: 60%;
+    position: relative;
+}
+#sobreMi img:hover{
+    transition: all .2s; 
+    transform: scale(1.06);
+}
+#sobreMi iframe:hover{
+    transition: all .2s; 
+    transform: scale(1.02);
+}
+
+.tituloMain {
+    color: white;
+    padding-left: 10px;
+    margin: 70px;
+    font-size: 21px;
+    background: linear-gradient(to right, black, transparent);
+    border-radius: 50px;
+    margin-top: 150px;
+}
+
+#datosDeContacto {
+    border: 2px black solid;
+    background-image: url("https://png.pngtree.com/background/20220720/original/pngtree-light-gray-background-texture-picture-image_1684251.jpg");
+    background-size: cover;
+    margin: auto;
+    border-radius: 20px;
+    width: 80%;
+    height: 485px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#datosDeContacto div {
+    background-size: cover;
+    margin: 0 0 10px 0;
+    width: 50%;
+    height: calc(100% / 3 - 20px);
+    display: flex;
+    align-items: center;
+}
+
+#datosDeContacto img {
+    width: 80px;
+    border: 2px solid black;
+    border-radius: 100px;
+    margin-right: 40px; /* Agrega un margen derecho para separar la imagen del texto */
+    margin-left: 50px;
+}
+
+#datosDeContacto h1 {
+    margin-right: 20px; 
+    font-size: 24px;
+}
+
+#datosDeContacto h2 {
+    margin-right: 20px; 
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.757);
+}
+
+#datosDeContacto img:hover {
+    transition: all .2s; 
+    transform: scale(1.15);
+    border-color: rgb(0, 255, 242);
+}
+
+/* Formacion Academica (no me peges gema que no puedo poner tildes con el teclado en ingles)*/
+#contenedoresCartas {
+    width: 90%;
+    height: auto;
+    display: flex;
+    background-color: rgba(240, 248, 255, 0.518);
+    justify-content: center;
+    margin: auto;
+    padding: 100px 0 100px 0;
+    border-radius: 20px;
+}
+
+
+#contenedorCarta, #contenedorCarta2, #contenedorCarta3 {
+    font-size: 0.8em;
+    margin-left: 50px;
+    margin-right: 50px;
+    perspective: 800px;
+    transition: all 0.3s ease 0s;
+    width: 350px;
+    animation: saltos ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#contenedorCarta:hover {
+    animation: none ;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;  
+}
+#contenedorCarta2:hover {
+    animation: none ;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    
+}
+#contenedorCarta3:hover {
+    animation: none ;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    
+}
+#contenedorCarta:hover #carta1 {
+    transform: rotateY(180deg);
+}
+
+.carta {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3a/Ies_Ram%C3%B3n_del_Valle_Incl%C3%A1n%2C_Sevilla_Este%2C_Sevilla%2C_Espa%C3%B1a%2C_2015_07.JPG");
+    background-size: cover;
+    height: 330px;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease 0s;
+    width: 350px;
+    -webkit-animation: giro 1s 1;
+    animation: giro 1s 1;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.carta p{
+    margin-top: 252px;
+    margin-left: 312px;
+    font-size: 20px;
+    color: rgb(0, 247, 255);
+}
+
+#contenedorCarta3 .carta {
+    background-image: url("https://adaits.es/files/2017/03/noticia-sin-imagen.jpg");
+    background-size: cover;
+    cursor: default;
+    height: 330px;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease 0s;
+    width: 350px;
+    -webkit-animation: giro 1s 1;
+    animation: giro 1s 1;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+#carta1 {
+    background-image: url("https://1.bp.blogspot.com/-IhQnDajooAY/WuMFJjzxETI/AAAAAAAAAMs/iVaFdPotkIcU21a5eGit3_LcdAD-LrjAACK4BGAYYCw/s1600/Logo%2BMoliner%2Bm%25C3%25A1s%2Bp%25C3%25ADxeles%2B2.JPG");
+    background-size: 400px 350px;
+    cursor: default;
+    height: 330px;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease 0s;
+    width: 350px;
+    -webkit-animation: giro 1s 1;
+    animation: giro 1s 1;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+#carta1 p{
+    margin-top: 252px;
+    margin-left: 312px;
+    font-size: 20px;
+    color: rgb(0, 247, 255);
+}
+#carta1 li{
+    text-align: left;
+}
+
+#contenedorCarta2,#contenedorCarta3 .carta li{
+    text-align: left;
+}
+
+
+.frontal, .detras {
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    display: block;
+    font-size: 20px;
+    height: 100%;
+    padding: 0.8em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+.detras {
+    transform: rotateY( 180deg);
+}
+
+#contenedorCarta2:hover .carta {
+    transform: rotateY(180deg);
+}
+
+#contenedorCarta3:hover .carta {
+    transform: rotateY(180deg);
+}
+
+#contenedorCarta #carta1 .detras {
+    background-image: url("https://media.istockphoto.com/id/1194009136/es/vector/abstracto-vector-blanco-fondo.jpg?s=612x612&w=0&k=20&c=KZcOB_67qsKFNgL6xnRyWMnpfDNmMFHHwlgshpxS01c=");
+    background-size: cover;
+    border-radius: 20px;
+}
+#contenedorCarta2 .carta .detras {
+    background-image: url("https://media.istockphoto.com/id/1194009136/es/vector/abstracto-vector-blanco-fondo.jpg?s=612x612&w=0&k=20&c=KZcOB_67qsKFNgL6xnRyWMnpfDNmMFHHwlgshpxS01c=");
+    background-size: cover;
+    border-radius: 20px;
+} 
+#contenedorCarta3 .carta .detras {
+    background-image: url("https://media.istockphoto.com/id/1194009136/es/vector/abstracto-vector-blanco-fondo.jpg?s=612x612&w=0&k=20&c=KZcOB_67qsKFNgL6xnRyWMnpfDNmMFHHwlgshpxS01c=");
+    background-size: cover;
+    border-radius: 20px;
+}
+
+@keyframes giro {
+    from {
+      transform: rotateY( 180deg);
+    }
+    to {
+      transform: rotateY( 0deg);
+    }
+}
+@-webkit-keyframes giro {
+    from {
+      transform: rotateY( 180deg);
+    }
+    to {
+      transform: rotateY( 0deg);
+    }
+}
+
+#saltos {
+    animation-name: saltos;
+    animation-timing-function: ease;
+}
+@keyframes saltos {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-100px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(-7px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+}
+
+/* Experiencia Laboral */
+
+#experienciaLaboral {
+    background-image: url("https://png.pngtree.com/background/20220720/original/pngtree-light-gray-background-texture-picture-image_1684251.jpg");
+    background-size: cover;
+    margin: auto;
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+    border: 2px black solid;
+    padding-top: 40px;
+}
+
+.empresa{
+    width: 100%;
+    height: 350px;
+
+}
+
+.experienciaTexto {
+    width: 90%; /* Cambiado para ajustar el tamaño del texto */
+    height: auto;
+    padding: 20px; /* Añadido un padding para separar el texto de la imagen */
+}
+
+.experienciaImagen {
+    height: 200px;
+    width: 30%; /* Cambiado para ajustar el tamaño de la imagen */
+    float: right; /* Alinea la imagen a la derecha */
+    margin-left: 20px; /* Añade un margen izquierdo para separar la imagen del texto */
+}
+
+#experienciaLaboral li {
+    margin-left: 60px;
+}
+
+#experienciaLaboral p {
+    font-size: 18px;
+    margin: 10px;
+    text-decoration: none;
+    text-align: left;
+}
+
+.logos-container {
+    display: flex;
+    justify-content: center;
+}
+
+.logos img {
+    object-fit: cover contain;
+    width: 100px;
+    height: 45px;
+    border: solid 2px black;
+    border-radius: 20px;
+}
+
+.logos  {
+    margin-right: 20px;
+}
+
+#experienciaLaboral #empresa1,#empresa2 {
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+#experienciaLaboral img:hover{
+    scale: 1.1;
+    transition: 1s;
 }
