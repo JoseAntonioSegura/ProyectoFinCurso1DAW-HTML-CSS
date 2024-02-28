@@ -1,0 +1,275 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("https://us.123rf.com/450wm/panychev/panychev1604/panychev160400448/55678195-resumen-de-fondo-azul-elemento-de-dise%C3%B1o-tel%C3%B3n-de-fondo-para-obras-de-arte-y-carteles-.jpg?ver=6");
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#bordeSuperior {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    border: solid 2px black;
+    width: 90%;
+    height: 2em;
+    margin: auto;
+}
+
+
+#contenedorPrincipal {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: auto;
+    width: 90%;
+    border: solid 2px black;
+    margin: auto;
+}
+
+#menuLateral {
+    background-image: url("https://p4.wallpaperbetter.com/wallpaper/276/148/1017/square-dark-shapes-black-wallpaper-preview.jpg");
+    width: 18%;
+    height: auto;
+    background-size: cover;
+}
+
+#menuLateral div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 20% 2% 20% 0px;
+}
+
+#menuLateral div div {
+    width: 3%;
+    height: 20px;
+    margin: auto;
+    margin-left: 10%;
+    margin-right: 8%;
+}
+
+#menuLateral a {
+    width: 70%;
+    height: 10%;
+    text-align: left;
+}
+
+.divDecorativo{
+    background-color: rgb(255, 255, 255);
+}
+
+#menuLateralImagen{
+    height: auto;
+    margin: 0px;
+}
+
+#menuLateral div:hover .divDecorativo {
+    background-color: rgb(0, 247, 255);
+}
+
+
+#menuLateral div:hover h1{
+    color: rgb(0, 247, 255);
+    scale: 1.15;
+    transition: all 0.4s ease 0s;
+}
+
+#menuLateral img {
+    width: 40%;
+    height: 30%;
+    border-radius: 100px;
+    margin: auto;
+}
+
+#menuLateral h1 {
+    color: white;
+    font-size: 22px;
+    animation-duration: 3s;
+    animation-name: animacionMenu;
+    text-align: left;
+}
+
+@keyframes animacionMenu {
+    0% {
+       opacity: 0;
+       transform: translateY(-2000px);
+    }
+    60% {
+       opacity: 1;
+       transform: translateY(30px);
+    }
+    80% {
+       transform: translateY(-10px);
+    }
+    100% {
+       transform: translateY(0);
+    }
+} 
+/* Estilos base */
+#fondoEncabezado {
+    background-image: url("https://images4.alphacoders.com/741/74166.jpg");
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    position: relative;
+    border: solid 2px black;
+    display: flex;
+}
+
+#fondoIzquierdo img {
+    margin-bottom: -20px;
+    animation-duration: 5s;
+    animation-name: imagen;}
+
+#fondoIzquierdo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#fondoIzquierdo div {
+    margin: 20px;
+}
+
+#fondoDerecho {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+#fondoEncabezado h1 {
+    color: white;
+}
+
+@keyframes animacionTexto {
+    0% {
+        opacity: 0;
+        font-size: 42px;
+        transform: translateY(-2000px);
+    }
+    60% {
+        opacity: 0.5;
+        font-size: 42px;
+        transform: translateY(30px);
+    }
+    80% {
+        opacity: 1;
+        font-size: 42px;
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+        font-size: 42px;
+    }
+}
+
+@keyframes animacionTextoTitulos {
+    0% {
+        opacity: 0;
+        font-size: 32px;
+        transform: translateY(-2000px);
+    }
+    60% {
+        opacity: 0.5;
+        font-size: 32px;
+        transform: translateY(30px);
+    }
+    80% {
+        opacity: 1;
+        font-size: 32px;
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+        font-size: 32px;
+    }
+}
+
+@keyframes imagen {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+    }
+}
+
+
+#nombre {
+    margin: auto;
+    padding-top: 120px;
+    padding-left: 0px;
+    font-size: 42px;
+    animation-duration: 3s;
+    animation-name: animacionTexto;
+}
+#apellidos {
+    margin: auto;
+    padding-top: 10px;
+    padding-left: 100px;
+    font-size: 42px;
+    animation-duration: 3s;
+    animation-name: animacionTexto;
+}
+
+#titulo1,
+#titulo2 {
+    text-align: center;
+    margin: 10px;
+    padding: 0;
+    font-size: 32px;
+    animation-duration: 3s;
+    animation-name: animacionTextoTitulos;}
+
+#descarga{
+    height: auto;
+    width: 150%;
+    color: black;
+    background-color: aqua;
+    border: 3px solid black;
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    margin-top: 10%;
+
+}
+
+#descarga h1{
+    font-size: 20px;
+    font-weight: 800;
+    color: black;
+}
+
+#descarga:hover{
+    transition: all .2s; 
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    }
+
+main {
+    width: 90%;
+    height: 100px;
+    background-color: aliceblue;
+    margin: auto;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    #fondoEncabezado {
+        flex-direction: column;
+    }
+
+    #fondoIzquierdo,
+    #fondoDerecho {
+        width: 100%;
+    }
+}
