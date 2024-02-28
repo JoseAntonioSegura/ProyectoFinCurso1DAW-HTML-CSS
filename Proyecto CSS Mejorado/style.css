@@ -621,6 +621,7 @@ main {
 .logos-container {
     display: flex;
     justify-content: center;
+    margin-top: 10%;
 }
 
 .logos img {
@@ -645,4 +646,65 @@ main {
 #experienciaLaboral img:hover{
     scale: 1.1;
     transition: 1s;
+}
+
+/* FOOTER */
+#footer{
+    background-image: url(Imagenes/black_abstract_geometric_background.png);
+    background-size: cover;
+    width: 90%;
+    height: 400px;
+    border: solid 3px black;
+    position: relative;
+    justify-content: center;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+}
+
+
+
+#footer div {
+    background-image: url(https://cdn.create.vista.com/api/media/medium/183355834/stock-photo-blank-abstract-grey-textured-background?token=) ;
+    width: 20%;
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 20px;
+    float: left;
+    margin: auto;
+}
+
+#footer div img {
+    width: 64px;
+    margin-top: 20px;
+    margin-left: 115px;
+    border-radius: 180px;
+    border: solid 3px transparent;
+}
+
+#footer div h2 {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#footer #footerCorreo h2 {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#footer #redesSociales {
+    width: 30%;
+}
+
+#footer img:hover {
+    scale: 1.1;
+    transition: all 1s;
+    border: solid 3px aqua;
+}
+
+#redesSociales a img {
+    margin-left: 42px;
+    width: 64px;
 }
