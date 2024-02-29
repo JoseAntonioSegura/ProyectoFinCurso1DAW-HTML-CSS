@@ -8,7 +8,10 @@ body {
     justify-content: center;
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
 }
+
+
 
 #bordeSuperior {
     display: flex;
@@ -26,7 +29,7 @@ body {
     height: auto;
     width: 90%;
     border: solid 2px black;
-    margin: auto;
+    margin: 0 auto;
 }
 
 #menuLateral {
@@ -207,20 +210,25 @@ body {
 
 
 #nombre {
+    background-color: rgba(128, 128, 128, 0.586);
     margin: auto;
-    padding-top: 120px;
-    padding-left: 0px;
+    vertical-align: middle;
+    justify-content: center;
     font-size: 42px;
     animation-duration: 3s;
     animation-name: animacionTexto;
+    padding: 15px;
+    border-radius: 20px 20px 0 0 ;
 }
 #apellidos {
+    background-color: rgba(128, 128, 128, 0.586);
     margin: auto;
-    padding-top: 10px;
+    padding: 15px;
     padding-left: 100px;
     font-size: 42px;
     animation-duration: 3s;
     animation-name: animacionTexto;
+    border-radius: 0 0 20px 20px;
 }
 
 #titulo1,
@@ -230,7 +238,12 @@ body {
     padding: 0;
     font-size: 32px;
     animation-duration: 3s;
-    animation-name: animacionTextoTitulos;}
+    animation-name: animacionTextoTitulos;
+    background-color: rgba(128, 128, 128, 0.586);
+    padding: 10px;
+    border-radius: 20px;
+}
+
 
 #descarga{
     height: auto;
@@ -258,31 +271,18 @@ body {
     border-color: rgb(255, 255, 255);
     }
 
-
-
-/* Media queries */
-@media screen and (max-width: 768px) {
-    #fondoEncabezado {
-        flex-direction: column;
-    }
-
-    #fondoIzquierdo,
-    #fondoDerecho {
-        width: 100%;
-    }
-}
-
-
 /* Main */
 
 main {
-    width: 88%;
+    width: 90%;
     height: auto;
-    margin: auto;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;   
     background-color: rgba(127, 130, 132, 0.623);
     display: block;
-    padding: 20px;
 }
+
 
 #sobreMi {
     display: flex;
@@ -306,9 +306,9 @@ main {
 
 #sobreMi h1 {
     margin: auto;
-    padding: 40px;
+    padding-left: 30px;
+    padding-top: 30px;
     font-size: 32px;
-    letter-spacing: 5px;
 }
 
 #sobreMi p {
@@ -344,12 +344,14 @@ main {
 
 .tituloMain {
     color: white;
-    padding-left: 10px;
-    margin: 70px;
-    font-size: 21px;
+    padding: 10px;
+    padding-left: 50px;
+    font-size: 18px;
     background: linear-gradient(to right, black, transparent);
     border-radius: 50px;
-    margin-top: 150px;
+    margin: auto;
+    margin: 100px;
+
 }
 
 #datosDeContacto {
@@ -735,7 +737,6 @@ main {
     transform: translatey(10%);
     max-height: 70px;
     transition: max-height 3s ease;
-    margin-bottom: 100px;
 }
 
 #skills:hover {
@@ -796,13 +797,14 @@ main {
     background-image: url(Imagenes/black_abstract_geometric_background.png);
     background-size: cover;
     width: 88%;
-    height: 400px;
+    height: auto;
     position: relative;
-    padding: 20px;
+    padding: 50px 20px 50px 20px;
     justify-content: center;
     margin: auto;
     justify-content: space-between;
     display: flex;
+
 }
 
 
@@ -810,20 +812,24 @@ main {
 #footer div {
     background-image: url(https://cdn.create.vista.com/api/media/medium/183355834/stock-photo-blank-abstract-grey-textured-background?token=) ;
     width: 20%;
-    height: 200px;
+    height: auto;
     border: 3px solid black;
     border-radius: 20px;
     float: left;
     margin: auto;
+
 }
 
 #footer div img {
     width: 64px;
     margin-top: 20px;
-    margin-left: 115px;
+    margin-left: auto; /* Establecer el margen izquierdo automático */
+    margin-right: auto; /* Establecer el margen derecho automático */
+    display: block; /* Asegurar que la imagen se comporte como un bloque para aplicar márgenes automáticos */
     border-radius: 180px;
     border: solid 3px transparent;
 }
+
 
 #footer div h2 {
     margin-top: 40px;
@@ -848,7 +854,8 @@ main {
 }
 
 #redesSociales a img {
-    margin-left: 42px;
+    display: inline-block; /* Asegura que las imágenes estén en línea */
     width: 64px;
+    margin-left: 8%;
 }
 
