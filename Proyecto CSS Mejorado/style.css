@@ -616,7 +616,9 @@ main {
 }
 
 #experienciaLaboral p {
-    font-size: 18px;
+    font-size: 21px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
     margin: 10px;
     text-decoration: none;
     text-align: left;
