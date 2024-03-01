@@ -9,6 +9,8 @@ body {
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
     margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 
@@ -58,6 +60,7 @@ body {
     width: 70%;
     height: 10%;
     text-align: left;
+    text-decoration: none;
 }
 
 .divDecorativo{
@@ -86,10 +89,9 @@ body {
     border-radius: 100px;
     margin: auto;
 }
-
 #menuLateral h1 {
     color: white;
-    font-size: 22px;
+    font-size: 1.5em; /* Cambiar el tamaño del texto a em */
     animation-duration: 3s;
     animation-name: animacionMenu;
     text-align: left;
@@ -125,10 +127,13 @@ body {
     padding: 20px; /* Agregar un espacio interior */
 }
 
-#fondoIzquierdo img {
+#fondoIzquierdo div img {
     margin-bottom: -20px;
     animation-duration: 5s;
-    animation-name: imagen;}
+    animation-name: imagen;
+    border-radius: 200px;
+
+}
 
 #fondoIzquierdo {
     width: 50%;
@@ -258,10 +263,15 @@ body {
 
 }
 
+#descarga a,h1,div{
+    text-decoration: none;
+}
+
 #descarga h1{
     font-size: 20px;
     font-weight: 800;
     color: black;
+    
 }
 
 #descarga:hover{
@@ -283,9 +293,11 @@ main {
     display: block;
 }
 
+/* Sobre mi  */
 
 #sobreMi {
     display: flex;
+    position: relative;
     background-image: url("https://png.pngtree.com/background/20220720/original/pngtree-light-gray-background-texture-picture-image_1684251.jpg");
     background-size: cover;
     margin: auto;
@@ -301,12 +313,13 @@ main {
 
 #sobreMi div {
    width: 50%;
-   float: left;
+   display: inline-flex;
+   flex-wrap: wrap;
 }
 
 #sobreMi h1 {
     margin: auto;
-    padding-left: 30px;
+    margin-left: 30px;
     padding-top: 30px;
     font-size: 32px;
 }
@@ -354,6 +367,33 @@ main {
 
 }
 
+@media only screen and (max-width: 1368px) {
+    #sobreMi {
+        display: grid;
+        justify-content: center; /* Centrar horizontalmente los elementos */
+        align-items: center; /* Centrar verticalmente los elementos */
+    }
+    
+    #sobreMi div {
+        width: 100%;
+        padding: 5px;
+        margin-top: 20px;
+    }
+
+    #sobreMi img {
+        width: 40%; /* Ajustar el ancho de las imágenes */
+        margin: auto; /* Centrar las imágenes horizontalmente */
+    }
+
+    #sobreMi iframe {
+        width: 95%; /* Ajustar el ancho al 100% */
+        height: 300px;
+        margin: auto; /* Centrar horizontalmente */
+    }
+}
+
+
+/* Datos de contacto */
 #datosDeContacto {
     border: 2px black solid;
     background-image: url("https://png.pngtree.com/background/20220720/original/pngtree-light-gray-background-texture-picture-image_1684251.jpg");
@@ -406,18 +446,16 @@ main {
     width: 90%;
     height: auto;
     display: flex;
-    background-color: rgba(240, 248, 255, 0.518);
+    flex-wrap: wrap;
     justify-content: center;
     margin: auto;
-    padding: 100px 0 100px 0;
     border-radius: 20px;
 }
 
 
 #contenedorCarta, #contenedorCarta2, #contenedorCarta3 {
     font-size: 0.8em;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 50px;
     transition: all 0.3s ease 0s;
     width: 350px;
     animation: saltos ;
@@ -572,7 +610,7 @@ main {
 @keyframes saltos {
     0%   { transform: scale(1,1)      translateY(0); }
     10%  { transform: scale(1.1,.9)   translateY(0); }
-    30%  { transform: scale(.9,1.1)   translateY(-100px); }
+    30%  { transform: scale(.9,1.1)   translateY(-50px); }
     50%  { transform: scale(1.05,.95) translateY(0); }
     57%  { transform: scale(1,1)      translateY(-7px); }
     64%  { transform: scale(1,1)      translateY(0); }
@@ -628,6 +666,7 @@ main {
     display: flex;
     justify-content: center;
     margin-top: 10%;
+    flex-wrap: wrap;
 }
 
 .logos img {
@@ -640,6 +679,7 @@ main {
 
 .logos  {
     margin-right: 20px;
+
 }
 
 #experienciaLaboral #empresa1,#empresa2 {
@@ -652,6 +692,13 @@ main {
 #experienciaLaboral img:hover{
     scale: 1.1;
     transition: 1s;
+}
+
+@media only screen and (max-width: 1300px) {
+    #experienciaLaboral #empresa1,#empresa2,.experienciaImagen {
+        display: none;
+        object-fit: none;
+    }
 }
 
 /* Tecnologias */
@@ -678,6 +725,8 @@ main {
     border: 2px solid black;
     border-radius: 20px;
     overflow: hidden;
+    flex-wrap: wrap;
+
 }
 
 .contenedorHabilidadImagen img{
@@ -719,6 +768,12 @@ main {
     transition-duration: 3s;
 }
 
+@media only screen and (max-width: 1300px) {
+    .contenedorHabilidad {
+        width: 35%;
+    }
+}
+
  /* Skills */
 
 #skills {
@@ -741,8 +796,10 @@ main {
     transition: max-height 3s ease;
 }
 
+
+
 #skills:hover {
-    max-height: 500px;
+    max-height: 550px;
 }
 
 #skills ul {
@@ -823,12 +880,12 @@ main {
 }
 
 #footer div img {
-    width: 64px;
+    width: 20%;
     margin-top: 20px;
     margin-left: auto; /* Establecer el margen izquierdo automático */
     margin-right: auto; /* Establecer el margen derecho automático */
-    display: block; /* Asegurar que la imagen se comporte como un bloque para aplicar márgenes automáticos */
     border-radius: 180px;
+    display: flex;
     border: solid 3px transparent;
 }
 
@@ -846,7 +903,7 @@ main {
 }
 
 #footer #redesSociales {
-    width: 30%;
+    width: 33%;
 }
 
 #footer img:hover {
@@ -856,8 +913,10 @@ main {
 }
 
 #redesSociales a img {
-    display: inline-block; /* Asegura que las imágenes estén en línea */
-    width: 64px;
-    margin-left: 8%;
+    display: inline-flex; /* Asegura que las imágenes estén en línea */
+    width: 12%;
+    margin: auto;
+    margin-left: 6%;
+    margin-top: 20px;
 }
 
