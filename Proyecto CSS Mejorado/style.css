@@ -113,6 +113,15 @@ body {
        transform: translateY(0);
     }
 } 
+
+
+
+@media only screen and (max-width: 1368px) {
+    #menuLateral {
+        display: none;
+    }
+}
+
 /* Estilos base */
 #fondoEncabezado {
     background-image: url("https://images4.alphacoders.com/741/74166.jpg");
@@ -215,7 +224,7 @@ body {
 
 
 #nombre {
-    background-color: rgba(128, 128, 128, 0.586);
+    background-color: rgba(43, 43, 43, 0.843);
     margin: auto;
     vertical-align: middle;
     justify-content: center;
@@ -226,7 +235,7 @@ body {
     border-radius: 20px 20px 0 0 ;
 }
 #apellidos {
-    background-color: rgba(128, 128, 128, 0.586);
+    background-color: rgba(43, 43, 43, 0.843);
     margin: auto;
     padding: 15px;
     padding-left: 100px;
@@ -244,7 +253,7 @@ body {
     font-size: 32px;
     animation-duration: 3s;
     animation-name: animacionTextoTitulos;
-    background-color: rgba(128, 128, 128, 0.586);
+    background-color: rgba(43, 43, 43, 0.843);
     padding: 10px;
     border-radius: 20px;
 }
@@ -370,8 +379,8 @@ main {
 @media only screen and (max-width: 1368px) {
     #sobreMi {
         display: grid;
-        justify-content: center; /* Centrar horizontalmente los elementos */
-        align-items: center; /* Centrar verticalmente los elementos */
+        justify-content: center;
+        align-items: center;
     }
     
     #sobreMi div {
@@ -381,14 +390,14 @@ main {
     }
 
     #sobreMi img {
-        width: 40%; /* Ajustar el ancho de las imágenes */
-        margin: auto; /* Centrar las imágenes horizontalmente */
+        width: 40%;
+        margin: auto;
     }
 
     #sobreMi iframe {
-        width: 95%; /* Ajustar el ancho al 100% */
+        width: 95%;
         height: 300px;
-        margin: auto; /* Centrar horizontalmente */
+        margin: auto;
     }
 }
 
@@ -401,15 +410,14 @@ main {
     margin: auto;
     border-radius: 20px;
     width: 80%;
-    height: 485px;
-    position: relative;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
 }
 
 #datosDeContacto div {
     background-size: cover;
-    margin: 0 0 10px 0;
+    margin: 2% 0 2% 0;
     width: 50%;
     height: calc(100% / 3 - 20px);
     display: flex;
@@ -430,15 +438,55 @@ main {
 }
 
 #datosDeContacto h2 {
-    margin-right: 20px; 
     font-size: 18px;
     color: rgba(0, 0, 0, 0.757);
+    display: flex;
+    flex-wrap: wrap;
+    word-break: break-all; /* Agrega esta línea para dividir las palabras largas */
 }
-
 #datosDeContacto img:hover {
     transition: all .2s; 
     transform: scale(1.15);
     border-color: rgb(0, 255, 242);
+}
+
+@media only screen and (max-width: 1390px) {
+    #datosDeContacto h1 {
+        font-size: 120%;
+    }
+
+    #datosDeContacto h2 {
+        font-size: 100%;
+    }
+
+    #datosDeContacto img {
+        margin: 5%;
+        width: 70px;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    #datosDeContacto {
+        justify-content: center;
+    }
+
+    #datosDeContacto div {
+        width: 90%;
+        max-width: auto;
+        text-align: center;
+        margin: 2% auto;
+    }
+
+    #datosDeContacto h1 {
+        margin-right: 20px;
+        font-size: 24px;
+    }
+
+    #datosDeContacto h2 {
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.757);
+        word-break: break-all;
+    }
+
 }
 
 /* Formacion Academica (no me peges gema que no puedo poner tildes con el teclado en ingles)*/
@@ -610,9 +658,9 @@ main {
 @keyframes saltos {
     0%   { transform: scale(1,1)      translateY(0); }
     10%  { transform: scale(1.1,.9)   translateY(0); }
-    30%  { transform: scale(.9,1.1)   translateY(-50px); }
+    30%  { transform: scale(.9,1.1)   translateY(-30px); }
     50%  { transform: scale(1.05,.95) translateY(0); }
-    57%  { transform: scale(1,1)      translateY(-7px); }
+    57%  { transform: scale(1,1)      translateY(0px); }
     64%  { transform: scale(1,1)      translateY(0); }
     100% { transform: scale(1,1)      translateY(0); }
 }
@@ -694,31 +742,26 @@ main {
     transition: 1s;
 }
 
-@media only screen and (max-width: 1300px) {
-    #experienciaLaboral #empresa1,#empresa2,.experienciaImagen {
-        display: none;
-        object-fit: none;
-    }
-}
 
+ 
 /* Tecnologias */
 #habilidades{
     width: 80%;
     margin: auto;
-    background-image: url("https://png.pngtree.com/background/20220720/original/pngtree-light-gray-background-texture-picture-image_1684251.jpg");
-    background-size: cover;
+    background-color: #7f7f7fa5;
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid black;
+    border: 2px solid #7f7f7fa5;
     border-radius: 20px;
     overflow: hidden;
 }
 
 .contenedorHabilidad{
     margin: auto;
+    justify-content: space-around;
     margin-top: 30px;
     margin-bottom: 30px;
-    width: 22%;
+    width: 300px;
     height: auto;
     background-color: #000000;
     position: relative;
@@ -736,17 +779,17 @@ main {
 }
 
 .contenedorHabilidadPorcentaje {
-    width: 100%; /* Ancho del contenedor del porcentaje */
-    height: 20px; /* Altura del contenedor del porcentaje */
+    width: 100%;
+    height: 20px;
     background-color: #7f7f7f;
     position: relative;
     overflow: hidden;
   }
   
   .porcentajeAnimado {
-    height: 100%; /* La altura debe ser igual al contenedor */
+    height: 100%;
     background-color: aqua;
-    animation: crecer 2s forwards; /* Duración y función de la animación */
+    animation: crecer 2s forwards;
     margin: 0px;
     transform: translatex(-100%);
     transition: transform 0.5s ease;
@@ -754,11 +797,11 @@ main {
   
   @keyframes crecer {
     from {
-      width: 0%; /* Porcentaje inicial, puede ser ajustado */
+      width: 0%;
       
     }
     to {
-      width: var(--porcentaje); /* Porcentaje final, se ajustará dinámicamente */
+      width: var(--porcentaje);
     }
   }
   
@@ -769,9 +812,15 @@ main {
 }
 
 @media only screen and (max-width: 1300px) {
-    .contenedorHabilidad {
-        width: 35%;
+
+    #experienciaLaboral #empresa1,#empresa2,.experienciaImagen {
+
+        display: none;
+
+        object-fit: none;
+
     }
+
 }
 
  /* Skills */
@@ -855,10 +904,10 @@ main {
 #footer{
     background-image: url(Imagenes/black_abstract_geometric_background.png);
     background-size: cover;
-    width: 88%;
+    width: 90%;
     height: auto;
     position: relative;
-    padding: 50px 20px 50px 20px;
+    padding: 50px 0px 50px 0px;
     justify-content: center;
     margin: auto;
     justify-content: space-between;
@@ -882,8 +931,8 @@ main {
 #footer div img {
     width: 20%;
     margin-top: 20px;
-    margin-left: auto; /* Establecer el margen izquierdo automático */
-    margin-right: auto; /* Establecer el margen derecho automático */
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 180px;
     display: flex;
     border: solid 3px transparent;
@@ -913,10 +962,326 @@ main {
 }
 
 #redesSociales a img {
-    display: inline-flex; /* Asegura que las imágenes estén en línea */
+    display: inline-flex;
     width: 12%;
     margin: auto;
     margin-left: 6%;
     margin-top: 20px;
 }
 
+/* Resolución Tablet */
+@media only screen and (max-width: 1024px) {
+    /* Header */
+    #bordeSuperior{
+        width: 100%;
+        margin: 0px;
+        flex-wrap: wrap; 
+    }
+
+    #fondoEncabezado {
+        width: 100%;
+        margin: 0px;
+    }
+
+    #fondoEncabezado div{
+        width: 90%;
+        margin: 5%;
+    }
+
+    #fondoEncabezado div div {
+        width: 100%;
+        margin: 0px;
+    }
+
+    #contenedorPrincipal{
+        width: 100%;
+        margin: 0px;
+    }
+
+    /* main */
+    body {
+        width: 100%;
+        margin: 0px;
+    }
+    
+    main{
+        width: 100%;
+    }
+
+    .tituloMain{
+        width: 100%;
+        margin-left: 0px;
+        border-radius: 0px;
+    }
+
+    /* Footer */
+    #footer {
+        width: 100%;
+        margin: 0px;
+        flex-wrap: wrap; 
+    }
+
+    #footer div h2{
+        font-size: 100%
+    }
+
+    #footer #footerCorreo h2{
+        font-size: 100%
+    }
+}
+
+
+/* Resolución Tel'efono */
+@media only screen and (max-width: 620px) {
+    /* Header */
+    #bordeSuperior{
+        width: 100%;
+        margin: 0px;
+    }
+
+    #fondoEncabezado {
+        width: 100%;
+        margin: 0px;
+        flex-wrap: wrap; 
+        padding: 0px;
+        text-align: center;
+    }
+
+    #fondoEncabezado div{
+        width: 100%;
+        margin: 5%;
+    }
+
+    #fondoEncabezado div div {
+        width: 100%;
+        margin: 0px;
+    }
+
+    #fondoEncabezado img {
+        width: 100%;
+        margin: 0px;
+    }
+
+    #contenedorPrincipal #fondoIzquierdo #nombre{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #contenedorPrincipal #fondoIzquierdo #apellidos{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        border-radius: 0px;
+    }
+
+    #contenedorPrincipal #fondoIzquierdo img{
+        background-color: rgba(0, 0, 0, 0.904);
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    #fondoDerecho a{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        width: 100%;
+    }
+
+    /* main */
+    body {
+        width: 100%;
+        margin: 0px;
+    }
+    
+    main{
+        width: 100%;
+        padding: 0;
+    }
+
+    .tituloMain{
+        width: 100%;
+        padding: 10px 0px 10px 0px;
+        background: linear-gradient(to bottom, black, #2f2f2f);
+        font-size: 15px;
+        margin: 0px;
+    }
+
+    .tituloMain h1{
+        padding: 10px 0px 10px 0px;
+    }
+
+    /* Sobre Mi */
+    #sobreMi{
+        width: 100%;
+        border-radius: 0px;
+        background-image: none;
+        border: none;
+        background: linear-gradient(to bottom, #7a7a7ac0, #7a7a7a3f);
+        padding: 0%;
+        padding-bottom: 50px;
+        
+    }
+
+    #sobreMi h1{
+        font-size: 190%;
+        padding-top: 30px;
+        margin: auto;
+    }
+    
+    #sobreMi p{
+        padding: 5%;
+    }
+
+    #sobreMi img{
+        width: 40%;
+        margin: auto;
+        padding: auto;
+    }
+
+    #sobreMi iframe{
+        width: 93%;
+        height: 200px;
+        margin: auto;
+        padding: auto;
+    }
+
+    /* Datos */
+    #datosDeContacto{
+        width: 100%;
+        border-radius: 0px;
+        background-image: none;
+        border: none;
+        background: linear-gradient(to bottom, #7a7a7ac0, #7a7a7a3f);
+        padding: 0%;
+        padding-bottom: 0px;
+    }
+
+    #datosDeContacto div{
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.424);
+        background-image: none;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    #datosDeContacto div img{
+        width: 60px;
+        padding: 0%;
+        margin: 5%;
+        margin-right: 10px;
+    }
+
+    #datosDeContacto div h1{
+        font-size: 21px;
+    }
+
+    #datosDeContacto div h2{
+        font-size: 16px;
+    }
+
+    /* Estudios */
+    #contenedoresCartas{
+        margin: auto;
+    }
+
+    #contenedoresCartas div{
+        margin-bottom: 10px;
+    }
+
+    /* Experiencia Laboral */
+    #experienciaLaboral{
+        width: 100%;
+        border-radius: 0px;
+        background-image: none;
+        border: none;
+        background: linear-gradient(to bottom, #7a7a7ac0, #7a7a7a3f);
+        padding: 0%;
+        margin-bottom: -20px;
+
+    }
+
+    #experienciaLaboral div{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    #experienciaLaboral div img{
+        object-fit: cover;
+    }
+
+    #experienciaLaboral li{
+        padding: 0%;
+        margin: 0%;
+    }
+
+    #experienciaLaboral li p{
+        font-size: 18px;
+    }
+
+    /* Skills */
+    #habilidades{
+        width: 100%;
+        border-radius: 0px;
+        background-image: none;
+        border: none;
+        background: linear-gradient(to bottom, #7a7a7ac0, #7a7a7a3f);
+        padding: 0%;
+        padding-bottom: 0px;
+    }
+
+    /* Footer */
+    #footer {
+        width: 100%;
+        margin: auto;
+        flex-wrap: wrap; 
+        display: flex;
+        align-items: center;
+    }
+    
+    #footer div img {
+        width: 60px;
+        margin: auto;
+    }
+    
+    #footer div{
+        min-width: 90%;
+        height: 100px;
+        margin: auto;
+        margin-top: 20px;
+        justify-content: center;
+    }
+    
+    #footer #redesSociales h2{
+        display: none;
+    }
+    
+    #footer #redesSociales{
+        min-width: 90%;
+        height: 100px;
+        margin: auto;
+        padding: auto;
+        margin-top: 20px;
+        display: flex; 
+        justify-content: center;
+        display: flex;
+        vertical-align: middle;
+    }
+    
+    #footer #redesSociales a{
+        margin: auto;
+        padding: auto;
+    }
+
+    #footer div h2{
+        font-size: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+        
+    #footer #footerCorreo h2{
+        font-size: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+}
