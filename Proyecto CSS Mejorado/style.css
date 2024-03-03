@@ -362,7 +362,7 @@ main {
     padding-left: 50px;
     font-size: 18px;
     background: linear-gradient(to right, black, transparent);
-    border-radius: 50px;
+    border-radius: 20px;
     margin: auto;
     margin: 100px;
 
@@ -456,30 +456,7 @@ main {
         width: 70px;
     }
 }
-@media only screen and (max-width: 1100px) {
-    #datosDeContacto {
-        justify-content: center;
-    }
 
-    #datosDeContacto div {
-        width: 90%;
-        max-width: auto;
-        text-align: center;
-        margin: 2% auto;
-    }
-
-    #datosDeContacto h1 {
-        margin-right: 20px;
-        font-size: 24px;
-    }
-
-    #datosDeContacto h2 {
-        font-size: 18px;
-        color: rgba(0, 0, 0, 0.757);
-        word-break: break-all;
-    }
-
-}
 
 /* Formacion Academica (no me peges gema que no puedo poner tildes con el teclado en ingles)*/
 #contenedoresCartas {
@@ -955,6 +932,43 @@ main {
     margin: auto;
     margin-left: 6%;
     margin-top: 20px;
+}
+
+@media only screen and (max-width: 1360px) {
+    #bordeSuperior{
+        width: 100%;
+        border: none;
+    }
+
+    #contenedorPrincipal {
+        width: 100%;
+        border: none;
+    }
+
+    body {
+        width: 100%;
+        margin: 0px;
+    }
+    
+    main{
+        width: 100%;
+    }
+
+    #footer{
+        width: 100%;
+    }
+
+    #menuLateral{
+        width: 25%;
+    }
+    .tituloMain{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        border-radius: 20px;
+    }
+    
 }
 
 
